@@ -2,16 +2,17 @@ let scoreA = "33";
 let scoreB = "33abc";
 let scoreC = null;
 
-// console.log(typeof scoreA);
-// console.log(typeof scoreA);
+// console.log(typeof scoreA);  //string
+// console.log(typeof scoreA);  //string
 
 let valueInNumber = Number(scoreA);
 let valueInNumber2 = Number(scoreB);
 let valueInNumber3 = Number(scoreC);
-// console.log(typeof valueInNumber);
-// console.log(valueInNumber2);
-// console.log(valueInNumber3);
 
+// console.log(typeof valueInNumber);  //number
+// console.log(valueInNumber2);       //NaN
+// console.log(valueInNumber3);      //0
+  
 // "33" => 33
 // "33abc" =>  NaN
 // true => 1;  false =>0
@@ -19,7 +20,7 @@ let valueInNumber3 = Number(scoreC);
 let isLoggedIn = 1;
 
 let booleanIsLoggedIn = Boolean(isLoggedIn);
-console.log(booleanIsLoggedIn);
+// console.log(booleanIsLoggedIn);         //true
 
 // 1 => true;  0 => false
 // "" => false

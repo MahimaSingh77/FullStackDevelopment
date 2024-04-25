@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
+        border: 3px solid black;
+      }
+
+      @media (max-width: 500px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="boxA">
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+
+      <div class="boxB">
+        <div class="box"></div>
+      </div>
+    </div>
+  </body>
+</html>

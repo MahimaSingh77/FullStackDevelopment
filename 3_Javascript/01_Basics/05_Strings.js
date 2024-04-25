@@ -13,7 +13,6 @@ const name = new String("Mahi")
 // console.log(name[0]);        //M
 // console.log(name.__proto__);   //{}
 
-
 // console.log(name.length);   //4
 // console.log(name.toUpperCase());  //MAHI   
 // console.log(name.charAt(2)); //h
@@ -30,9 +29,6 @@ const name = new String("Mahi")
 // const newStringOne = "          Mahima Singh "
 // console.log(newStringOne);    //        Mahima Singh
 // console.log(newStringOne.trim());   //Mahima Singh(Removes starting and end space only)
-
-
-
 
 // const url = "https://abc.com/singh%mahima"
 

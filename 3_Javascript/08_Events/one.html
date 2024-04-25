@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Elements</title>
+  </head>
+  <body style="background-color: #414141; color: aliceblue">
+    <h2>Amazing image</h2>
+    <div>
+      <ul id="images">
+        <li>
+          <img width="200px" id="img1" src="images/owl.jpg" alt="Photo1" />
+        </li>
+        <li>
+          <img width="200px" id="img2" src="images/peacock.jpg" alt="Photo1" />
+        </li>
+        <li>
+          <img width="200px" id="img3" src="images/owl.jpg" alt="Photo2" />
+        </li>
+        <li>
+          <img width="200px" id="img4" src="images/peacock.jpg" alt="Photo3" />
+        </li>
+        <li>
+          <img width="200px" id="img5" src="images/owl.jpg" alt="Photo4" />
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    // document.getElementById('img1').onclick = function () {
+    //   alert('owl clicked');
+    // };
+
+    //attachEvent()
+    //jQuery - on
+
+    // document.getElementById('img1').addEventListener('click', function () {
+    //   alert('owl clocked');
+    // });
+
+    //event object
+    // document.getElementById('img1').addEventListener('click', function (e) {
+    //    console.log(e);
+    // },false);
+
+    /*
+    type, timestamp, defaultPrevented, target, toELement, srcELement,
+    currentTarget, clientX, clientY, screenX, screenY, altKay, ctrlKey, shiftKey. keyCode
+
+    */
+
+
+
+
+
+    /*Event Propagation-Event bubbling(bottom to top), Event Capturing*/
+
+    //Event bubbling**********************
+    // document.getElementById('images').addEventListener('click', function (e) {
+    //    console.log("clicked inside the u");
+    // });
+
+    // document.getElementById('img1').addEventListener('click', function (e) {
+    //    console.log("owl clicked");
+    // });
+
+    /*output -  owl clicked
+               clicked inside the u*/
+
+
+
+
+
+
+    //stopPropagation***********************
+    // document.getElementById('images').addEventListener('click', function (e) {
+    //   console.log('clicked inside the u');
+    // });
+
+    // document.getElementById('img1').addEventListener('click', function (e) {
+    //   console.log('owl clicked');
+    //   e.stopPropagation();
+    // });
+
+    /*
+    output - owl clicked
+    */
+
+    // document.getElementById('img2').addEventListener(
+    //   'click',
+    //   function (e) {
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     console.log('2nd pic clicked');
+    //   },
+    //   false
+    // );
+
+
+
+    //remove*********************
+    // document.querySelector('#images').addEventListener
+    // ('click', function(e){
+    //   console.log(e.target.parentNode);
+    //   let removeIt = e.target.parentNode
+    //   removeIt.remove()
+    //   // removeIt.parentNode.removeChild(removeIt)
+    // })
+
+
+    document.querySelector('#images').addEventListener
+    ('click', function(e){
+      console.log(e.target.tagName);
+     if(e.target.tagName === 'IMG'){
+        console.log(e.target.id);
+     }
+      
+    })
+    
+  </script>
+</html>

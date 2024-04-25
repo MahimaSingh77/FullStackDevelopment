@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadow Effects</title>
+    <style>
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        .box{
+            --primary-color:grey;
+            --custom-width:330px;
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height: 330px;
+            border: 2px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow:10px 15px rgb(145, 144, 144); */
+            /* box-shadow: 10px 15px 20px grey;          using blur radius */
+            /* box-shadow: inset 10px 15px 20px grey;      shadow inwards */
+            /* box-shadow: 10px 15px 10px red , 15px 8px  green;     two colours */
+            box-shadow: 10px 15px 20px var(--primary-color);
+
+        }
+        img{
+            height: 100px;
+            width: 100px;
+        }
+
+        h2{
+            /* text-shadow: 2px 2px 2px red;   x-offset  y-offset  blurr-radius */
+            /* text-shadow: yellow 12px 13px 2px; */
+            text-shadow: 2px 2px 2px;
+
+        }
+        p{
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <img src="box7_image.jpg" alt="image"/>
+        <h2>Welcome To CodeHelp!</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ipsam exercitationem, culpa praesentium id quis cupiditate saepe assumenda eveniet libero.</p>
+        
+
+    </div>
+    </div>
+</body>
+</html>

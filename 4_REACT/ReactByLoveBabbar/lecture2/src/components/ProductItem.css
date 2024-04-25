@@ -1,0 +1,9 @@
+.product-item_description{
+
+}
+
+.product-item{
+    display: flex;
+    flex-direction: row;
+}
+

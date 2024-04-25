@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations In CSS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: beige;
+        border: 5px solid black;
+        display: flex;
+      }
+      .box {
+        width: 350px;
+        height: 80px;
+        background-color: blue;
+        border: 3px solid yellow;
+        margin: 10px;
+        animation-name: rightMovement;
+        position: relative;
+
+        /* animation-duration:5s ;
+            animation-iteration-count: 1;
+            animation-delay: 2s; 
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            animation-fill-mode: forwards; */
+
+        animation: 3s ease-in 1s infinite alternate none running rightMovement;
+      }
+
+      @keyframes rightMovement {
+        from {
+          top: 0;
+          left: 0;
+        }
+
+        to {
+          top: 0;
+          left: 1250px;
+        }
+      }
+
+      #box2{
+        width: 350px;
+        height: 80px;
+        background-color: blue;
+        border: 3px solid yellow;
+        border-radius: 10px;
+        margin: 10px;
+        position: relative;
+        animation: 3s ease-in 1s infinite alternate none running rightMovement;
+      }
+
+      @keyframes leftMovement {
+        from {
+          top: 0;
+          left: 0;
+        }
+
+        to {
+          top: 0;
+          left: 1250px;
+        }
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

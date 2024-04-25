@@ -8,6 +8,7 @@
 // console.log(typeof myDate);
 
 let myCreatedDate = new Date(2023, 0, 23);
+
 // console.log(myCreatedDate.toLocaleString());  //  23/1/2023, 12:00:00 am
 
 // let myCreatedDate2 = new Date(2023, 0, 23, 5, 3)
@@ -20,11 +21,11 @@ let myCreatedDate = new Date(2023, 0, 23);
 // console.log(myTimeStamp);
 // console.log(myCreatedDate.getTime());
 
-console.log(Math.floor(Date.now() / 1000));
+console.log(Math.floor(Date.now() / 1000));           //1710150079
 
 let newDate = new Date();
-console.log(newDate.getMonth() + 1);
-console.log(newDate.getDay());
+console.log(newDate.getMonth() + 1);      //3
+console.log(newDate.getDay());          //1
 
 newDate.toLocaleString("default", {
   weekday: "long",

@@ -1,0 +1,33 @@
+
+
+/*
+
+*/
+    body {
+      background-color: #e2f9f9; 
+    }
+    h1{
+        color: rgb(21, 71, 71);
+    }
+    h3{
+        color: rgb(6, 139, 139);
+    }
+    hr{
+      background-color: #e2f9f9;
+      border-style: none;
+      border-top-style: dotted;
+      width: 5%;
+      border-color: grey;
+      border-width: 5px;
+
+    }
+    img{
+      height: 120px;
+    }
+
+    .firstheading{
+        color: blueviolet;
+        align-items:;
+    }
+
+  
